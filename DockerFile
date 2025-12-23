@@ -1,11 +1,11 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
-    python6.14.2 \
-    pythong6-pip \
+    python3 \
+    python3-pip \
     git
 
-RUN pip6 install PyYAML
+RUN pip3 install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 
